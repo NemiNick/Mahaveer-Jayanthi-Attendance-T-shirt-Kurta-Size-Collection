@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><p style="color:red;">Mahaveer Jayanthi Registration</p></title>
+    <title>Mahaveer Jayanthi Registration</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-color: #FFDDDD;
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: white; /* Background set to white */
         }
         .container {
             max-width: 400px;
             margin: 20px auto;
             padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
         .logo {
-            width: 80px;
-            display: block;
-            margin: 0 auto;
+            width: 50px;
+            height: auto;
         }
         h1 {
             color: #D63333;
             font-size: 22px;
-            margin-bottom: 10px;
+            margin: 0;
         }
         label {
             font-weight: bold;
@@ -67,8 +69,10 @@
 <body>
 
     <div class="container">
-        <img src="jain_logo.png" alt="Jain Logo" class="logo">
-        <h1>Mahaveer Jayanthi Registration</h1>
+        <div class="header">
+            <img src="jain_logo.png" alt="Jain Logo" class="logo">
+            <h1>Mahaveer Jayanthi Registration</h1>
+        </div>
         
         <form id="registrationForm">
             <label for="fullName">Full Name & Surname:</label>
@@ -102,7 +106,13 @@
                 <option>Large (L)</option>
                 <option>XL</option>
                 <option>XXL</option>
-            
+            </select>
+
+            <label for="kurta">Do you need a Kurta?</label>
+            <select id="kurta">
+                <option>No</option>
+                <option>Yes</option>
+            </select>
 
             <label for="kurtaSize">Kurta Size:</label>
             <select id="kurtaSize">
