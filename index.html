@@ -1,71 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahaveer Jayanthi Registration</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: white; /* Background set to white */
-        }
-        .container {
-            max-width: 400px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-        .logo {
-            width: 50px;
-            height: auto;
-        }
-        h1 {
-            color: #D63333;
-            font-size: 22px;
-            margin: 0;
-        }
-        label {
-            font-weight: bold;
-            display: block;
-            text-align: left;
-            margin-top: 10px;
-        }
-        input, select, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background-color: #ffdddd; /* Light pink */;
-            color: Light pink;
-            font-size: 18px;
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            margin-top: 15px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #A82222;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #A82222;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
 
@@ -98,6 +37,7 @@
             <select id="attending">
                 <option>Yes</option>
                 <option>No</option>
+                <option>Yet to Plan</option>
             </select>
 
             <label for="tshirtSize">T-shirt Size:</label>
@@ -107,12 +47,7 @@
                 <option>Large (L)</option>
                 <option>XL</option>
                 <option>XXL</option>
-            </select>
-
-            <label for="kurta">Do you need a Kurta?</label>
-            <select id="kurta">
-                <option>No</option>
-                <option>Yes</option>
+                <option>XXXL (Free Size)</option>
             </select>
 
             <label for="kurtaSize">Kurta Size:</label>
@@ -134,5 +69,6 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
