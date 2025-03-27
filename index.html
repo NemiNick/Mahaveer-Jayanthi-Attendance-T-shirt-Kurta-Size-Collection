@@ -4,40 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahaveer Jayanthi Registration</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h2>Mahaveer Jayanthi Registration</h2>
+        <h1>Mahaveer Jayanthi Registration</h1>
         <form id="registrationForm">
-            <label>Full Name & Surname:</label>
-            <input type="text" name="fullName" required>
+            <label for="name">Full Name & Surname:</label>
+            <input type="text" id="name" name="name" required>
 
-            <label>Mobile Number:</label>
-            <input type="tel" name="mobile" required>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required>
 
-            <label>Email:</label>
-            <input type="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-            <label>Address:</label>
-            <textarea name="address" required></textarea>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
 
-            <label>Father Name:</label>
-            <input type="text" name="fatherName" required>
+            <label for="father">Father Name:</label>
+            <input type="text" id="father" name="father" required>
 
-            <label>Mother Name (Optional):</label>
-            <input type="text" name="motherName">
+            <label for="mother">Mother Name (Optional):</label>
+            <input type="text" id="mother" name="mother">
 
-            <label>Are you attending Mahaveer Jayanthi?</label>
-            <select name="attendance" required>
+            <label for="attendance">Are you attending Mahaveer Jayanthi?</label>
+            <select id="attendance" name="attendance" required>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
-                <option value="Yet to Plan">Yet to Plan</option>
+                <option value="Yet to plan">Yet to Plan</option>
             </select>
 
-            <label>T-shirt Size:</label>
-            <select name="tshirtSize" required>
+            <label for="tshirt">T-shirt Size:</label>
+            <select id="tshirt" name="tshirt" required>
                 <option value="S">Small (S)</option>
                 <option value="M">Medium (M)</option>
                 <option value="L">Large (L)</option>
@@ -46,28 +45,21 @@
                 <option value="XXXL">Free Size (XXXL)</option>
             </select>
 
-            <label>Do you need a Kurta?</label>
-            <select id="kurtaNeed" name="kurtaNeed" required>
+            <label for="kurta">Do you need a Kurta?</label>
+            <select id="kurta" name="kurta" required>
                 <option value="No">No</option>
                 <option value="Yes">Yes</option>
             </select>
 
-            <div id="kurtaSizeDiv" style="display: none;">
-                <label>Kurta Size (Number):</label>
-                <input type="number" name="kurtaSize">
-            </div>
+            <label for="kurtaSize">Kurta Size (if applicable):</label>
+            <input type="text" id="kurtaSize" name="kurtaSize" disabled>
+
+            <p class="slogan">Jai Jinendra - Live with Truth & Ahimsa</p>
+            <p class="invitation">Join us for Mahaveer Jayanthi on 10 April at 8:00 AM, Thursday, at Mahaveer Galli, Kamaripeth, New Hubli, Hubballi, Karnataka 580020. Join and make your presence felt to enlighten the rally!</p>
 
             <button type="submit">Submit</button>
         </form>
-
-        <div class="footer">
-            <p>"Jai Jinendra" - Live with Truth & Ahimsa</p>
-            <p><strong>Invitation:</strong> Join us for <strong>Mahaveer Jayanthi</strong> on <strong>10 April at 8:00 AM, Thursday</strong></p>
-            <p>Location: Mahaveer Galli, Kamaripeth, New Hubli, Hubballi, Karnataka 580020</p>
-            <p>Join and make your presence felt to enlighten the rally!</p>
-        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
