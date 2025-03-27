@@ -4,14 +4,14 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahaveer Jayanthi </title>
+    <title>Mahaveer Jayanthi</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: #ffdddd; /* Light pink */
-            }
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffdddd; /* Light pink */
+        }
         .container {
             max-width: 400px;
             margin: 20px auto;
@@ -46,8 +46,8 @@
             border-radius: 5px;
         }
         button {
-           background-color: #A82222;
-            color: Hex;
+            background-color: #A82222;
+            color: white;
             font-size: 18px;
             width: 100%;
             padding: 10px;
@@ -57,7 +57,7 @@
             cursor: pointer;
         }
         button:hover {
-            background-color: #A82222;
+            background-color: #8f1b1b;
         }
         .footer {
             margin-top: 20px;
@@ -72,7 +72,7 @@
     <div class="container">
         <div class="header">
             <img src="jain_logo.png" alt="Jain Logo" class="logo">
-            <h1>Mahaveer Jayanthi </h1>
+            <h1>Mahaveer Jayanthi</h1>
         </div>
         
         <form id="registrationForm">
@@ -120,21 +120,46 @@
             <button type="submit">Submit</button>
         </form>
 
+        <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            var formData = new FormData(this); // Collect form data
+
+            fetch("https://script.google.com/macros/s/AKfycbzCbYYDXuiNm8QrFZAE3sYVu5RtYnfZMnmtIfXHSY32Dv521uAYy_n8XRClU79Iafbd/exec", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                if (data.includes("Duplicate")) {
+                    alert("You have already submitted this form!");
+                } else {
+                    alert("Registration Successful!");
+                    document.getElementById("registrationForm").reset();
+                }
+            })
+            .catch(error => console.error("Error:", error));
+        });
+        </script>
+
         <div class="footer">
-    <p style="text-align: center; font-weight: bold;">"Jai Jinendra! Live and Let Live."</p>
-    <br>
-    <p style="text-align: center;">
-        You are invited to attend Mahaveer Jayanthi on <b>10 April at 8.00 AM, Thursday</b>
-    </p>
-    <br>
-    <p style="text-align: center;">
-        <b>Location:</b> Mahaveer Galli, Kamari Peth, New Hubli, Hubballi, Karnataka 580020
-    </p>
-    <br>
-    <p style="text-align: center;">
-        Join and make your presence felt, enlighten the rally!
-    </p>
-</div>
+            <p style="text-align: center; font-weight: bold;">"Jai Jinendra! Live and Let Live."</p>
+            <br>
+            <p style="text-align: center;">
+                You are invited to attend Mahaveer Jayanthi on <b>10 April at 8.00 AM, Thursday</b>
+            </p>
+            <br>
+            <p style="text-align: center;">
+                <b>Location:</b> Mahaveer Galli, Kamari Peth, New Hubli, Hubballi, Karnataka 580020
+            </p>
+            <br>
+            <p style="text-align: center;">
+                Join and make your presence felt, enlighten the rally!
+            </p>
+        </div>
+
+    </div>
 
 </body>
 </html>
