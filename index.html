@@ -3,56 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> <p style="color:red;"> Mahaveer Jayanthi Registration</p></title>
+    <title>Mahaveer Jayanthi Registration</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <img src="jain_logo.png" alt="Jain Logo" class="logo">
-        <h2>Mahaveer Jayanthi Registration</h2>
+        <div class="header">
+            <img src="jain_logo.png" alt="Jain Logo" class="logo">
+            <h1>Mahaveer Jayanthi Registration</h1>
+        </div>
         <form id="registrationForm">
             <label for="fullName">Full Name & Surname:</label>
-            <input type="text" id="fullName" name="fullName" required>
-
+            <input type="text" id="fullName" required>
+            
             <label for="mobile">Mobile Number:</label>
-            <input type="tel" id="mobile" name="mobile" required>
-
+            <input type="tel" id="mobile" required>
+            
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
+            <input type="email" id="email" required>
+            
             <label for="address">Address:</label>
-            <textarea id="address" name="address" required></textarea>
-
+            <textarea id="address" required></textarea>
+            
             <label for="fatherName">Father Name:</label>
-            <input type="text" id="fatherName" name="fatherName" required>
-
+            <input type="text" id="fatherName">
+            
             <label for="motherName">Mother Name (Optional):</label>
-            <input type="text" id="motherName" name="motherName">
-
-            <label for="attendance">Are you attending Mahaveer Jayanthi?</label>
-            <select id="attendance" name="attendance" required>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
+            <input type="text" id="motherName">
+            
+            <label for="attending">Are you attending Mahaveer Jayanthi?</label>
+            <select id="attending">
+                <option>Yes</option>
+                <option>No</option>
             </select>
-
+            
             <label for="tshirtSize">T-shirt Size:</label>
-            <select id="tshirtSize" name="tshirtSize" required>
-                <option value="S">Small (S)</option>
-                <option value="M">Medium (M)</option>
-                <option value="L">Large (L)</option>
-                <option value="XL">Extra Large (XL)</option>
+            <select id="tshirtSize">
+                <option>Small (S)</option>
+                <option>Medium (M)</option>
+                <option>Large (L)</option>
+                <option>XL</option>
+                <option>XXL</option>
             </select>
-
-            <label for="kurtaSize">Do you need a Kurta?</label>
-            <select id="kurtaSize" name="kurtaSize" required>
-                <option value="No">No</option>
-                <option value="M (38)">M (38)</option>
-                <option value="L (40)">L (40)</option>
-                <option value="XL (42)">XL (42)</option>
-                <option value="XXL (44)">XXL (44)</option>
-                <option value="3XL (46)">3XL (46)</option>
-                <option value="4XL (48)">4XL (48)</option>
+            
+            <label for="kurta">Do you need a Kurta?</label>
+            <select id="kurta">
+                <option>No</option>
+                <option>Yes</option>
             </select>
+            
+            <label for="kurtaSize">Kurta Size:</label>
+            <select id="kurtaSize"></select>
             
             <button type="submit">Submit</button>
         </form>
