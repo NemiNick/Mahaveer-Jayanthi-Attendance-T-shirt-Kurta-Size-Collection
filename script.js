@@ -1,18 +1,24 @@
-document.getElementById("registrationForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Form submitted successfully! You can only submit once.");
-    document.getElementById("registrationForm").style.display = "none";
-});
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("registrationForm");
+    const submitButton = document.querySelector("button");
+    const messageDiv = document.createElement("div");
+    
+    // Check if form is already submitted
+    if (localStorage.getItem("formSubmitted")) {
+        form.style.display = "none";  // Hide the form
+        messageDiv.innerHTML = "<h3 style='color: red;'>You have already submitted the form.</h3>";
+        document.body.appendChild(messageDiv);
+    }
 
-// Update Kurta size options based on the reference chart
-document.addEventListener("DOMContentLoaded", function() {
-    let kurtaSizeSelect = document.getElementById("kurtaSize");
-    let sizes = ["M (38)", "L (40)", "XL (42)", "XXL (44)", "3XL (46)", "4XL (48)"];
-    kurtaSizeSelect.innerHTML = "";
-    sizes.forEach(size => {
-        let option = document.createElement("option");
-        option.value = size;
-        option.textContent = size;
-        kurtaSizeSelect.appendChild(option);
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent actual form submission
+        
+        // Save submission status
+        localStorage.setItem("formSubmitted", "true");
+
+        // Hide form and show message
+        form.style.display = "none";
+        messageDiv.innerHTML = "<h3 style='color: green;'>Thank you for registering!</h3>";
+        document.body.appendChild(messageDiv);
     });
 });
