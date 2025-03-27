@@ -3,121 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> <p style="color:red;"> Mahaveer Jayanthi Registration</p></title>
+    <title><p style="color:red;">Mahaveer Jayanthi Registration</p></title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-color: #ffc2c2; /* Light pink background */
+            background-color: #FFDDDD;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            text-align: center;
         }
-
         .container {
             max-width: 400px;
-            background: #ffe0e0;
-            padding: 20px;
             margin: 20px auto;
+            padding: 20px;
+            background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
-
-        .header {
-            text-align: center;
-        }
-
-        .header img {
+        .logo {
             width: 80px;
+            display: block;
+            margin: 0 auto;
         }
-
         h1 {
+            color: #D63333;
             font-size: 22px;
-            color: #d40000;
+            margin-bottom: 10px;
         }
-
         label {
             font-weight: bold;
             display: block;
             text-align: left;
             margin-top: 10px;
         }
-
         input, select, textarea {
             width: 100%;
             padding: 8px;
             margin-top: 5px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 14px;
         }
-
-        .submit-btn {
-            background-color: #d40000;
+        button {
+            background-color: #D63333;
             color: white;
             font-size: 18px;
-            font-weight: bold;
+            width: 100%;
+            padding: 10px;
             border: none;
             border-radius: 5px;
-            padding: 10px;
             margin-top: 15px;
-            width: 100%;
             cursor: pointer;
         }
-
-        .submit-btn:hover {
-            background-color: #b30000;
+        button:hover {
+            background-color: #A82222;
         }
-
-        .invite-text {
-            font-weight: bold;
-            color: #d40000;
-            margin-top: 15px;
-        }
-
-        .event-details {
-            text-align: center;
+        .footer {
+            margin-top: 20px;
             font-size: 14px;
-            margin-top: 10px;
-        }
-
-        .event-details b {
-            color: #000;
+            color: #A82222;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <div class="header">
-            <img src="jain_logo.png" alt="Jain Logo">
-            <h1>Mahaveer Jayanthi Registration</h1>
-        </div>
+        <img src="jain_logo.png" alt="Jain Logo" class="logo">
+        <h1>Mahaveer Jayanthi Registration</h1>
         
         <form id="registrationForm">
             <label for="fullName">Full Name & Surname:</label>
             <input type="text" id="fullName" required>
-            
+
             <label for="mobile">Mobile Number:</label>
             <input type="tel" id="mobile" required>
-            
+
             <label for="email">Email:</label>
             <input type="email" id="email" required>
-            
+
             <label for="address">Address:</label>
             <textarea id="address" required></textarea>
-            
+
             <label for="fatherName">Father Name:</label>
             <input type="text" id="fatherName">
-            
+
             <label for="motherName">Mother Name (Optional):</label>
             <input type="text" id="motherName">
-            
+
             <label for="attending">Are you attending Mahaveer Jayanthi?</label>
             <select id="attending">
                 <option>Yes</option>
                 <option>No</option>
             </select>
-            
+
             <label for="tshirtSize">T-shirt Size:</label>
             <select id="tshirtSize">
                 <option>Small (S)</option>
@@ -126,23 +103,31 @@
                 <option>XL</option>
                 <option>XXL</option>
             </select>
-            
+
             <label for="kurta">Do you need a Kurta?</label>
             <select id="kurta">
                 <option>No</option>
                 <option>Yes</option>
             </select>
-            
-            <button type="submit" class="submit-btn">Submit</button>
+
+            <label for="kurtaSize">Kurta Size:</label>
+            <select id="kurtaSize">
+                <option>M (38)</option>
+                <option>L (40)</option>
+                <option>XL (42)</option>
+                <option>XXL (44)</option>
+            </select>
+
+            <button type="submit">Submit</button>
         </form>
 
-        <p class="invite-text">"Jai Jinendra! Live and Let Live."</p>
-
-        <div class="event-details">
-            <p>You are invited to attend Mahaveer Jayanthi on <b>10 April at 8.00 AM, Thursday</b></p>
-            <p><b>Location:</b> Mahaveer Galli, Kamari Peth, New Hubli, Hubballi, Karnataka 580020</p>
-            <p>Join and make your presence felt, enlighten the rally!</p>
+        <div class="footer">
+            "Jai Jinendra! Live and Let Live." <br>
+            You are invited to attend Mahaveer Jayanthi on <b>10 April at 8.00 AM, Thursday</b> <br>
+            <b>Location:</b> Mahaveer Galli, Kamari Peth, New Hubli, Hubballi, Karnataka 580020 <br>
+            Join and make your presence felt, enlighten the rally!
         </div>
     </div>
+
 </body>
 </html>
