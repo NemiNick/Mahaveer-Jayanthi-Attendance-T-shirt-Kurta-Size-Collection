@@ -4,42 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahaveer Jayanthi Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="form-container">
+    <div class="container">
         <h2>Mahaveer Jayanthi Registration</h2>
         <form id="registrationForm">
-            <label for="fullName">Full Name & Surname:</label>
-            <input type="text" id="fullName" required>
+            <label>Full Name & Surname:</label>
+            <input type="text" name="fullName" required>
 
-            <label for="mobileNumber">Mobile Number:</label>
-            <input type="tel" id="mobileNumber" required>
+            <label>Mobile Number:</label>
+            <input type="tel" name="mobile" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
+            <label>Email:</label>
+            <input type="email" name="email" required>
 
-            <label for="address">Address:</label>
-            <textarea id="address" required></textarea>
+            <label>Address:</label>
+            <textarea name="address" required></textarea>
 
-            <label for="fatherName">Father Name:</label>
-            <input type="text" id="fatherName" required>
+            <label>Father Name:</label>
+            <input type="text" name="fatherName" required>
 
-            <label for="motherName">Mother Name (Optional):</label>
-            <input type="text" id="motherName">
+            <label>Mother Name (Optional):</label>
+            <input type="text" name="motherName">
 
             <label>Are you attending Mahaveer Jayanthi?</label>
-            <select id="attendance" required>
+            <select name="attendance" required>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
                 <option value="Yet to Plan">Yet to Plan</option>
             </select>
 
-            <label for="tshirtSize">T-shirt Size:</label>
-            <select id="tshirtSize" required>
+            <label>T-shirt Size:</label>
+            <select name="tshirtSize" required>
                 <option value="S">Small (S)</option>
                 <option value="M">Medium (M)</option>
                 <option value="L">Large (L)</option>
@@ -49,18 +47,27 @@
             </select>
 
             <label>Do you need a Kurta?</label>
-            <select id="needKurta" required onchange="toggleKurtaSize()">
+            <select id="kurtaNeed" name="kurtaNeed" required>
                 <option value="No">No</option>
                 <option value="Yes">Yes</option>
             </select>
 
-            <div id="kurtaSizeContainer" style="display: none;">
-                <label for="kurtaSize">Kurta Size (Number):</label>
-                <input type="number" id="kurtaSize">
+            <div id="kurtaSizeDiv" style="display: none;">
+                <label>Kurta Size (Number):</label>
+                <input type="number" name="kurtaSize">
             </div>
 
             <button type="submit">Submit</button>
         </form>
+
+        <div class="footer">
+            <p>"Jai Jinendra" - Live with Truth & Ahimsa</p>
+            <p><strong>Invitation:</strong> Join us for <strong>Mahaveer Jayanthi</strong> on <strong>10 April at 8:00 AM, Thursday</strong></p>
+            <p>Location: Mahaveer Galli, Kamaripeth, New Hubli, Hubballi, Karnataka 580020</p>
+            <p>Join and make your presence felt to enlighten the rally!</p>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
