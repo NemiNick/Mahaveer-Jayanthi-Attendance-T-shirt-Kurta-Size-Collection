@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("registrationForm");
     const submitButton = document.querySelector("button");
     const messageDiv = document.createElement("div");
-    
+
     // Check if form is already submitted
     if (localStorage.getItem("formSubmitted")) {
         form.style.display = "none";  // Hide the form
