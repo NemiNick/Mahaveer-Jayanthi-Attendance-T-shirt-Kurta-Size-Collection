@@ -1,24 +1,29 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fce4ec;
+    text-align: center;
+    background-color: #ffdddd; /* Light pink background */
     margin: 0;
     padding: 0;
 }
 
+/* Container */
 .container {
-    width: 50%;
+    max-width: 500px;
     margin: 20px auto;
-    background: white;
     padding: 20px;
-    border-radius: 8px;
+    background: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
+/* Header */
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -27,38 +32,48 @@ body {
 }
 
 h1 {
-    color: #d32f2f;
-    text-align: center;
+    color: #D63333;
+    font-size: 22px;
+    margin: 0;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
+/* Form */
 label {
     font-weight: bold;
+    display: block;
+    text-align: left;
     margin-top: 10px;
 }
 
-input, textarea, select {
+input, select, textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
+/* Submit Button */
 button {
-    background-color: #d32f2f;
+    background-color: #D63333;
     color: white;
+    font-size: 18px;
+    width: 100%;
     padding: 10px;
     border: none;
+    border-radius: 5px;
     margin-top: 15px;
     cursor: pointer;
-    border-radius: 4px;
 }
 
 button:hover {
-    background-color: #b71c1c;
+    background-color: #A82222;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #A82222;
+    font-weight: bold;
 }
