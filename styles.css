@@ -1,60 +1,68 @@
-/* Updated styles for a premium look */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #f7f7f7;
+    background-color: #f8d7da;
+    font-family: Arial, sans-serif;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
-
 .container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 500px;
-    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #f8d7da;
+    text-align: left;
 }
-
-h2 {
+.title {
+    color: #d9534f;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.slogan {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
     color: #d9534f;
     text-align: center;
-    font-size: 22px;
-    margin-bottom: 20px;
-    font-weight: bold;
 }
-
+.invitation {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.submit-button {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.submit-button:hover {
+    background-color: #c9302c;
+}
+.logo {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: 0 auto 10px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
 input, select, textarea {
     width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background: #d9534f;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #c9302c;
-}
-
-.footer {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 20px;
-    color: #666;
-    font-weight: bold;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
 }
