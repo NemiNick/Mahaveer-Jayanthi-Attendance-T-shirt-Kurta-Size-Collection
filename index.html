@@ -3,12 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahaveer Jayanthi Registration</title>
+    <title> <p style="color:red;">Mahaveer Jayanthi Registration</p></title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f8d7da;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin: 80px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .title {
+            color: #d9534f;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .slogan {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #d9534f;
+        }
+        .invitation {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .submit-button {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .submit-button:hover {
+            background-color: #c9302c;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="spacer"></div>
         <h1 class="title">Mahaveer Jayanthi Registration</h1>
         <form id="registrationForm">
             <label for="fullName">Full Name & Surname:</label>
@@ -62,23 +104,12 @@
             <button type="submit" class="submit-button">Submit</button>
         </form>
     </div>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Form submitted successfully! You can only submit once.");
+            document.getElementById("registrationForm").style.display = "none";
+        });
+    </script>
 </body>
 </html>
-
-/* styles.css */
-body {
-    background-color: #f8d7da;
-}
-
-.container {
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-}
-
-.spacer {
-    height: 50px;
-}
