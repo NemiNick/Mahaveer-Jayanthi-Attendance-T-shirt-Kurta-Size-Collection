@@ -5,76 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahaveer Jayanthi Registration</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: #f8d7da;
-            font-family: Arial, sans-serif;
-            padding-top: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            max-width: 500px;
-            padding: 20px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            background: #f8d7da;
-            text-align: left;
-        }
-        .title {
-            color: #d9534f;
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-        }
-        .slogan {
-            margin-top: 20px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #d9534f;
-            text-align: center;
-        }
-        .invitation {
-            margin-top: 20px;
-            font-size: 14px;
-            text-align: center;
-        }
-        .submit-button {
-            background-color: #d9534f;
-            color: white;
-            padding: 10px;
-            border: none;
-            width: 100%;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-        }
-        .submit-button:hover {
-            background-color: #c9302c;
-        }
-        .logo {
-            display: block;
-            width: 80px;
-            height: auto;
-            margin: 0 auto 10px;
-        }
-        label {
-            display: block;
-            font-weight: bold;
-            margin-top: 10px;
-            text-align: left;
-        }
-        input, select, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            display: block;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -132,12 +62,6 @@
             <button type="submit" class="submit-button">Submit</button>
         </form>
     </div>
-    <script>
-        document.getElementById("registrationForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Form submitted successfully! You can only submit once.");
-            document.getElementById("registrationForm").style.display = "none";
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
