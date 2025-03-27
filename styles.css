@@ -1,24 +1,72 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("registrationForm");
-    const submitButton = document.querySelector("button");
-    const messageDiv = document.createElement("div");
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* Light Gray Background */
+    margin: 0;
+    padding: 0;
+}
 
-    // Check if form is already submitted
-    if (localStorage.getItem("formSubmitted")) {
-        form.style.display = "none";  // Hide the form
-        messageDiv.innerHTML = "<h3 style='color: red;'>You have already submitted the form.</h3>";
-        document.body.appendChild(messageDiv);
-    }
+.container {
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent actual form submission
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
-        // Save submission status
-        localStorage.setItem("formSubmitted", "true");
+.logo {
+    width: 40px;
+    height: auto;
+}
 
-        // Hide form and show message
-        form.style.display = "none";
-        messageDiv.innerHTML = "<h3 style='color: green;'>Thank you for registering!</h3>";
-        document.body.appendChild(messageDiv);
-    });
-});
+h1 {
+    color: #D63333;
+    font-size: 22px;
+    margin: 0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #D63333;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A82222;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #A82222;
+    font-weight: bold;
+}
