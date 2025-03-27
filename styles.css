@@ -1,42 +1,43 @@
+/* Set background color for the whole page */
 body {
+    background-color: #ffdddd !important; /* Light pink background */
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0; /* Light Gray Background */
     margin: 0;
     padding: 0;
 }
 
+/* Center the form container */
 .container {
-    max-width: 450px;
-    margin: 30px auto;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white; /* White background for form */
     padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo and title alignment */
 .header {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
+    justify-content: center;
 }
 
 .logo {
-    width: 40px;
+    width: 50px;
     height: auto;
 }
 
-h1 {
-    color: #D63333;
-    font-size: 22px;
-    margin: 0;
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
+/* Labels and Inputs */
 label {
     font-weight: bold;
-    display: block;
-    text-align: left;
     margin-top: 10px;
 }
 
@@ -48,25 +49,26 @@ input, select, textarea {
     border-radius: 5px;
 }
 
+/* Submit Button */
 button {
-    background-color: #D63333;
+    background-color: #e63946;
     color: white;
-    font-size: 18px;
-    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
     margin-top: 15px;
+    font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #A82222;
+    background-color: #d62839;
 }
 
-.footer {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #A82222;
+/* Message Box */
+.message-box {
+    text-align: center;
     font-weight: bold;
+    color: #d62839;
+    margin-top: 10px;
 }
