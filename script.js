@@ -1,24 +1,74 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("registrationForm");
-    const submitButton = document.querySelector("button");
-    const messageDiv = document.createElement("div");
-    
-    // Check if form is already submitted
-    if (localStorage.getItem("formSubmitted")) {
-        form.style.display = "none";  // Hide the form
-        messageDiv.innerHTML = "<h3 style='color: red;'>You have already submitted the form.</h3>";
-        document.body.appendChild(messageDiv);
-    }
+/* Apply background color */
+body {
+    background-color: #ffdddd; /* Light pink background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent actual form submission
-        
-        // Save submission status
-        localStorage.setItem("formSubmitted", "true");
+/* Centering the container */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff; /* White background for form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
-        // Hide form and show message
-        form.style.display = "none";
-        messageDiv.innerHTML = "<h3 style='color: green;'>Thank you for registering!</h3>";
-        document.body.appendChild(messageDiv);
-    });
-});
+/* Header: Logo and Title Side by Side */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels and Inputs */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+button {
+    background-color: #e63946;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d62839;
+}
+
+/* Message Box */
+.message-box {
+    text-align: center;
+    font-weight: bold;
+    color: #d62839;
+    margin-top: 10px;
+}
