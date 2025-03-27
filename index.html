@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <p style="color:red;"> Mahaveer Jayanthi Registration</p></title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <img src="jain_logo.png" alt="Jain Logo" class="logo">
-        <h1 class="title">Mahaveer Jayanthi Registration</h1>
+        <h2>Mahaveer Jayanthi Registration</h2>
         <form id="registrationForm">
             <label for="fullName">Full Name & Surname:</label>
             <input type="text" id="fullName" name="fullName" required>
@@ -31,36 +31,31 @@
             <input type="text" id="motherName" name="motherName">
 
             <label for="attendance">Are you attending Mahaveer Jayanthi?</label>
-            <select id="attendance" name="attendance">
+            <select id="attendance" name="attendance" required>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
-                <option value="Yet to Plan">Yet to Plan</option>
             </select>
 
             <label for="tshirtSize">T-shirt Size:</label>
-            <select id="tshirtSize" name="tshirtSize">
+            <select id="tshirtSize" name="tshirtSize" required>
                 <option value="S">Small (S)</option>
                 <option value="M">Medium (M)</option>
                 <option value="L">Large (L)</option>
                 <option value="XL">Extra Large (XL)</option>
-                <option value="XXL">Double Extra Large (XXL)</option>
-                <option value="XXXL">Free size (XXXL)</option>
             </select>
 
-            <label for="kurta">Do you need a Kurta?</label>
-            <select id="kurta" name="kurta">
+            <label for="kurtaSize">Do you need a Kurta?</label>
+            <select id="kurtaSize" name="kurtaSize" required>
                 <option value="No">No</option>
-                <option value="Yes">Yes</option>
+                <option value="M (38)">M (38)</option>
+                <option value="L (40)">L (40)</option>
+                <option value="XL (42)">XL (42)</option>
+                <option value="XXL (44)">XXL (44)</option>
+                <option value="3XL (46)">3XL (46)</option>
+                <option value="4XL (48)">4XL (48)</option>
             </select>
-
-            <div class="slogan">"Jai Jinendra! Live and Let Live."</div>
-            <div class="invitation">
-                <p>You are invited to attend Mahaveer Jayanthi on <b>10 April at 8.00 AM, Thursday</b></p>
-                <p><b>Location:</b> Mahaveer Galli, Kamaripeth, New Hubli, Hubballi, Karnataka 580020</p>
-                <p>Join and make your presence felt, enlighten the rally!</p>
-            </div>
             
-            <button type="submit" class="submit-button">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
     <script src="script.js"></script>
