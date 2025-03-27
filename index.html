@@ -12,8 +12,48 @@
             gap: 10px;
         }
         .logo {
-            width: 50px;
+            width: 40px;
             height: auto;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        label {
+            width: 40%;
+            text-align: right;
+            margin-right: 10px;
+        }
+        input, select, textarea {
+            width: 55%;
+            padding: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
         }
     </style>
 </head>
@@ -24,51 +64,77 @@
             <h1>Mahaveer Jayanthi Registration</h1>
         </div>
         <form id="registrationForm">
-            <label for="fullName">Full Name & Surname:</label>
-            <input type="text" id="fullName" required>
+            <div class="form-group">
+                <label for="fullName">Full Name & Surname:</label>
+                <input type="text" id="fullName" required>
+            </div>
             
-            <label for="mobile">Mobile Number:</label>
-            <input type="tel" id="mobile" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            
-            <label for="address">Address:</label>
-            <textarea id="address" required></textarea>
-            
-            <label for="fatherName">Father Name:</label>
-            <input type="text" id="fatherName">
-            
-            <label for="motherName">Mother Name (Optional):</label>
-            <input type="text" id="motherName">
-            
-            <label for="attending">Are you attending Mahaveer Jayanthi?</label>
-            <select id="attending">
-                <option>Yes</option>
-                <option>No</option>
-            </select>
-            
-            <label for="tshirtSize">T-shirt Size:</label>
-            <select id="tshirtSize">
-                <option>Small (S)</option>
-                <option>Medium (M)</option>
-                <option>Large (L)</option>
-                <option>XL</option>
-                <option>XXL</option>
-            </select>
-            
-            <label for="kurta">Do you need a Kurta?</label>
-            <select id="kurta">
-                <option>No</option>
-                <option>Yes</option>
-            </select>
-            
-            <label for="kurtaSize">Kurta Size:</label>
-            <select id="kurtaSize"></select>
-            
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="fatherName">Father Name:</label>
+                <input type="text" id="fatherName">
+            </div>
+
+            <div class="form-group">
+                <label for="motherName">Mother Name (Optional):</label>
+                <input type="text" id="motherName">
+            </div>
+
+            <div class="form-group">
+                <label for="attending">Are you attending Mahaveer Jayanthi?</label>
+                <select id="attending">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tshirtSize">T-shirt Size:</label>
+                <select id="tshirtSize">
+                    <option>Small (S)</option>
+                    <option>Medium (M)</option>
+                    <option>Large (L)</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="kurta">Do you need a Kurta?</label>
+                <select id="kurta">
+                    <option>No</option>
+                    <option>Yes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="kurtaSize">Kurta Size:</label>
+                <select id="kurtaSize">
+                    <option>M (38)</option>
+                    <option>L (40)</option>
+                    <option>XL (42)</option>
+                    <option>XXL (44)</option>
+                    <option>3XL (46)</option>
+                    <option>4XL (48)</option>
+                </select>
+            </div>
+
             <button type="submit">Submit</button>
         </form>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
